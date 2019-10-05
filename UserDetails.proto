@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package beilmo.spectre.entity;
+
+option swift_prefix="";
+option java_package = "com.beilmo.spectre.entity";
+
+message UserDetails {
+    enum TicketType {
+        UNKNOWN = 0;
+        FREE = 1;
+        EARLY_BIRD = 2;
+        REGULAR = 3;
+        BUNDLE = 4;
+    }
+
+    TicketType ticketType = 1;
+}

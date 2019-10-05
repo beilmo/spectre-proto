@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package beilmo.spectre.entity;
+
+option swift_prefix="";
+option java_package = "com.beilmo.spectre.entity";
+
+message Speaker {
+    sint64 id = 1;
+    string first_name = 2;
+    string last_name = 3;
+    string job_title = 4;
+    string company = 5;
+    string biography = 6;
+    string photo_url = 7;
+
+    string facebook_url = 20;
+    string twitter_url = 21;
+    string linkedin_url = 22;
+    string website_url = 23;
+}

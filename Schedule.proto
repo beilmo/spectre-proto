@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package beilmo.spectre.entity;
+
+option swift_prefix="";
+option java_package = "com.beilmo.spectre.entity";
+
+import "Session.proto";
+
+message Schedule {
+    repeated Session items = 1;
+    string interest_filter = 2;
+}

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package beilmo.spectre.entity;
+
+option swift_prefix="";
+option java_package = "com.beilmo.spectre.entity";
+
+import "Speaker.proto";
+
+message Session {
+    sint64 id = 1;
+    string title = 2;
+    string abstract = 3;
+    string room = 4;
+
+    /* The number of seconds since midnight on January 1, 1970 in GMT. (UNIX epoch time)*/
+    double date = 5;
+
+    /* The time interval required for this session, measured in seconds.*/
+    sint32 duration = 6;
+    repeated Speaker speakers = 7;
+    repeated string keywords = 8;
+}

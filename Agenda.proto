@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package beilmo.spectre.entity;
+
+option swift_prefix="";
+option java_package = "com.beilmo.spectre.entity";
+
+message Agenda {
+    repeated string session_items = 1;
+}
