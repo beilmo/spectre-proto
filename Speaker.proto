@@ -4,6 +4,7 @@ package beilmo.spectre.entity;
 
 option swift_prefix="";
 option java_package = "com.beilmo.spectre.entity";
+option go_package = "github.com/beilmo/spectre-go-entity";
 
 message Speaker {
     sint64 id = 1;
