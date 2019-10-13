@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package beilmo.spectre.entity;
+package beilmo.spectre.dto;
 
 option swift_prefix="";
 option java_package = "com.beilmo.spectre.entity";
-option go_package = "github.com/beilmo/spectre-go-entity";
+option go_package = "github.com/beilmo/spectre-go-rest-api/interfaces/api/dto";
 
 message Agenda {
     repeated string session_items = 1;
